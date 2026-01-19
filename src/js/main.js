@@ -1116,7 +1116,7 @@ function hideAllSections() {
         dateEl.textContent = formattedDate;
     }
 
-    // شغلها أول ما الصفحة تفتح
+    //  أول ما الصفحة تفتح يعمل تاريخ اليوم
     updateFoodLogDate();
 
 
@@ -1140,7 +1140,7 @@ function hideAllSections() {
     // ======================= Nutri-Score Filter =======================
     gradButtons.forEach(btn => {
         btn.addEventListener("click", () => {
-            activeGrade = btn.dataset.grade; // "" or a/b/c/d/e
+            activeGrade = btn.dataset.grade; 
             setActiveGradeUI(btn);
             applyFilters();
         });

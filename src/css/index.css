@@ -2794,7 +2794,7 @@ input[type=checkbox] {
         transform: translate(-100%)
     }
 
-    
+
     body.sidebar-open #sidebar {
         transform: translateX(0);
         box-shadow: 4px 0 20px #00000026;
@@ -2803,6 +2803,14 @@ input[type=checkbox] {
     #main-content {
         margin-left: 0 !important
     }
+
+   
+    @media (max-width: 768px) {
+        #view-toggle {
+            display: none;
+        }
+    }
+
 
     .sidebar-overlay {
         z-index: 35;
